@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Admission Registration</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Student Admission Registration</h1>
+            <p>Complete this form to register your interest in admission. <span>Fields marked required must be filled in.</span></p>
+        </header>
+
+        <div>
+            <h2>Student registration form</h2>
+            <p>Enter the student's details and select the requested admission information below.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <div>
+                        <label for="student-name">Student full name</label>
+                        <input id="student-name" name="studentName" type="text" placeholder="e.g. Preetii Singh" required>
+                    </div>
+
+                    <div>
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" min="3" max="100" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" placeholder="student@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Create a password</label>
+                        <input id="password" name="password" type="password" minlength="8" autocomplete="new-password" required>
+                    </div>
+
+                    <div>
+                        <label for="grade">Applying for grade</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select a grade</option>
+                            <option value="grade-1">Grade 1</option>
+                            <option value="grade-2">Grade 2</option>
+                            <option value="grade-3">Grade 3</option>
+                            <option value="grade-4">Grade 4</option>
+                            <option value="grade-5">Grade 5</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Preferred study shift</legend>
+                        <label><input type="radio" name="shift" value="morning" required>Morning</label>
+                        <label><input type="radio" name="shift" value="afternoon">Afternoon</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Activities of interest</legend>
+                        <label><input type="checkbox" name="activities" value="sports">Sports</label>
+                        <label><input type="checkbox" name="activities" value="music">Music</label>
+                        <label><input type="checkbox" name="activities" value="arts">Arts</label>
+                    </fieldset>
+
+                    <div>
+                        <label for="address">Home address and additional information</label>
+                        <textarea id="address" name="address" rows="4" placeholder="Enter the student's address or any information the school should know"></textarea>
+                    </div>
+
+                    <div>
+                        <label><input type="checkbox" name="consent" value="yes" required>I confirm that the information provided is accurate.</label>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Submit registration</button>
+                    <button type="reset">Clear form</button>
+                </div>
+            </form>
+        </div>
+
+        <section aria-labelledby="submission-heading">
+            <h2 id="submission-heading">How form submission works</h2>
+            <p>The browser checks required fields and input types, then submits the named values to the address in <code>action</code> using the HTTP method in <code>method</code>. <strong>GET</strong> places form values in the URL and is generally for searches; <strong>POST</strong> sends values in the request body and is generally used to submit data. This example uses <code>method="post"</code>; a server must be configured to receive and process the submission.</p>
+        </section>
+
+        <section aria-labelledby="elements-heading">
+            <h2 id="elements-heading">HTML elements in this page</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Element</th>
+                        <th scope="col">Example use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Headings and paragraphs</th>
+                        <td><code>h1</code>, <code>h2</code>, and <code>p</code> organize titles and explanatory text.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Containers and inline text</th>
+                        <td><code>div</code> groups form content; <code>span</code> can mark a short phrase within text.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Form controls</th>
+                        <td>Text, number, email, password, radio, checkbox, select, textarea, and submit/reset buttons collect information.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Table structure</th>
+                        <td><code>table</code>, <code>thead</code>, <code>tbody</code>, <code>tr</code>, <code>th</code>, and <code>td</code> organize this reference.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
